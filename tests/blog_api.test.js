@@ -445,7 +445,7 @@ describe('user tests when there is initially one user in db', () => {
 describe('login tests when one user in db', () => {
   beforeEach(async () => {
     await User.deleteMany({})
-    const passwordHash = await bcrypt.hash('sekret', 10)
+    const passwordHash = await bcrypt.hash('secret', 10)
     const user = new User({ username: 'testuser', passwordHash })
     await user.save()
   })
@@ -453,7 +453,7 @@ describe('login tests when one user in db', () => {
   test('succeeds with correct credentials', async () => {
     const response = await api
       .post('/api/login')
-      .send({ username: 'testuser', password: 'sekret' })
+      .send({ username: 'testuser', password: 'secret' })
       .expect(200)
       .expect('Content-Type', /application\/json/)
 
