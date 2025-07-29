@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaWNlMTIzIiwiaWQiOiI2ODg3YjNiODAwODRjMTE1ZmRmNzk0NGIiLCJpYXQiOjE3NTM3OTE1NDZ9.y46deA44Hpj-TgZE6Zt8JtJ_kB7Ot2cXtJTbwYTueuw
+
+{
+  "title": "14 Tips for Clean Express Code",
+  "author": "Anna",
+  "url": "https://devblog.io/clean-express-code",
+  "likes": 17,
+  "userId": "6887b3b80084c115fdf7944b"
+}
